@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+textarea,
+input:not([type='submit']) {
+  height: 50px;
+  padding-left: 16px;
+  width: 100%;
+}
+
+textarea {
+  padding-top: 16px;
+  resize: none;
+  height: 250px;
+}
+
+input,
+textarea {
+  border-radius: 20px;
+  border: #888 1px solid;
+  box-sizing: border-box;
+  justify-self: center;
+  background-color: var(--background-color);
+  color: var(--form-text-color);
+}
+
+::placeholder {
+  color: var(--form-text-color);
+}
+
+input[type='submit'] {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
+}
+
+input[type='submit']:hover {
+  transform: scale(1.05);
+}
+
+input[type='submit']:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media (width >= 800px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 600px;
+    font-size: 20px;
+  }
+  form {
+    gap: 40px;
+  }
+}
+
+@media (width >= 1400px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 800px;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
+}
+
+/* ✅ Success and Error Styling */
+.popup.success {
+  border-left: 6px solid green;
+  color: #155724;
+  background-color: #ededed;
+  white-space: pre-line;
+}
+
+.popup.error {
+  border-left: 6px solid red;
+  color: #721c24;
+  background-color: #ededed;
+  white-space: pre-line;
+}
+
+/* Dark Theme */
+[data-theme="dark"] .popup.success {
+  background-color: #313131;
+}
+
+[data-theme="dark"] .popup.error {
+  background-color: #313131;
+}
+
+/* ✅ Message Styling */
+.popup p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* ✅ Close Button */
+.popup button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: green;
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 480px) {
+  .popup {
+    width: 85%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .popup p {
+    font-size: 14px;
+  }
+
+  .popup button {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
