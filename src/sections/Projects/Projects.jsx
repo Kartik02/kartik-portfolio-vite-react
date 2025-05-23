@@ -1,9 +1,10 @@
-import styles from './ProjectsStyles.module.css';
-import mediplus from '../../assets/mediplus.png';
-import weather from '../../assets/weather-predictor.png';
-import calculator from '../../assets/virtual-calculator.png';
-import signlanguage from '../../assets/signlanguage.png';
-import ProjectCard from '../../common/ProjectCard';
+import styles from "./ProjectsStyles.module.css";
+import mediplus from "../../assets/mediplus.png";
+import expense from "../../assets/expense.png";
+import weather from "../../assets/weather-predictor.png";
+import calculator from "../../assets/virtual-calculator.png";
+import signlanguage from "../../assets/signlanguage.png";
+import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
   return (
@@ -15,6 +16,12 @@ function Projects() {
           link="https://medi-plus-beta.vercel.app/"
           h3="Mediplus"
           p="Ecommerce Website"
+        />
+        <ProjectCard
+          src={expense}
+          link="https://expensechecker.vercel.app/"
+          h3="Expense Tracker"
+          p="Web Development"
         />
         <ProjectCard
           src={weather}
