@@ -62,7 +62,7 @@ function Hero() {
         </p>
         {/* <a href={CV} download> */}
         <a
-          href="https://drive.google.com/file/d/1NfL6ZTc8KXR7MyF4SJPQ7K-cV0ebm129/view"
+          href="https://drive.google.com/file/d/1GjuWdnsTNhwsgkB5Nahc26Wbty_eTXQp/view"
           target="_blank"
           rel="noopener noreferrer"
         >
