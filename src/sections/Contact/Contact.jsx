@@ -51,7 +51,7 @@ function Contact() {
       {popup.show && (
         <div className={`${styles.popup} ${popup.type === "success" ? styles.success : styles.error}`}>
           <p>{popup.message}</p>
-          <button onClick={() => setPopup({ show: false, message: "", type: "" })}>Close</button>
+          <button onClick={() => setPopup({ show: false, message: "", type: "" })}>OK</button>
         </div>
       )}
     </section>

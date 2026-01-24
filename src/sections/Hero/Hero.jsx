@@ -56,9 +56,11 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          MCA Graduate<br></br>
-          Full-Stack Enthusiast<br></br>
-          Skilled in UI & Responsiveness
+          MCA Graduate (2024)
+          <br />
+          Backend & Frontend Development
+          <br />
+          Django, Angular, React, REST APIs
         </p>
         {/* <a href={CV} download> */}
         <a
