@@ -43,7 +43,7 @@ function Hero() {
           <br />
           Poojari
         </h1>
-        <h2>Software Developer</h2>
+        <h2>Full Stack Developer</h2>
         <span>
           <a href="https://instagram.com/kartik._______" target="_blank">
             <img src={instagramIcon} alt="Instagram icon" />
@@ -56,15 +56,15 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          MCA Graduate (2024)
+          MCA Graduate
           <br />
-          Backend & Frontend Development
+          Building scalable & user-focused web applications
           <br />
           Django, Angular, React, REST APIs
         </p>
         {/* <a href={CV} download> */}
         <a
-          href="https://drive.google.com/file/d/1GjuWdnsTNhwsgkB5Nahc26Wbty_eTXQp/view"
+          href="https://drive.google.com/file/d/1dOZ38qJYB46_lwt3UVHzse6Hnit0Brz8/view"
           target="_blank"
           rel="noopener noreferrer"
         >
